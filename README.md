@@ -22,3 +22,5 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+*
+DMMWEBCAMP カリキュラム【アプリケーションを完成させよう】CARAVANのページです。

@@ -1,12 +1,13 @@
 class BlogsController < ApplicationController
   def index
+    @blogs = Blog.all
   end
 
   def show
   end
 
   def new
-    @blogs = Blog.new
+    @blog = Blog.new
   end
 
   def create
@@ -20,8 +21,7 @@ class BlogsController < ApplicationController
 
   private
   def blog_params
-    params.require(:blog).premit(:title, :category, :body)
+    params.require(:blog).permit(:title, :category, :body)
   end
-
 
 end
